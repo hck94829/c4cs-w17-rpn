@@ -4,7 +4,7 @@ python:
 install:
   - pip install coveralls
 script:
-  make
-  coverage run --source=rpn test_rpn.py
+  - make
+  - coverage run --source=rpn test_rpn.py
 after_success:
   coveralls
