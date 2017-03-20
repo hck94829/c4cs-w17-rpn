@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import operator
+import pdb
 
 OPERATORS = {
     '+': operator.add,
@@ -15,7 +16,6 @@ OPERATORS = {
 
 def calculate(arg):
     stack = []
-
 
     for operand in arg.split():
         try:
