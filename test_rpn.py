@@ -13,3 +13,7 @@ class TestBasics(unittest.TestCase):
     def test_exponential(self):
         result = rpn.calculate("4 2 ^")
         self.assertEqual(16, result)
+        
+    def test_multiplication(self):
+        result = rpn.calculate("4 2 *")
+        self.assertEqual(8, result)
